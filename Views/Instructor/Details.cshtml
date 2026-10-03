@@ -1,0 +1,15 @@
+﻿@model mvctack2.Models.Instructor
+
+<h2>Instructor Details</h2>
+
+<div>
+    <p><strong>Id:</strong> @Model.Id</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Salary:</strong> @Model.Salary</p>
+    <p><strong>Address:</strong> @Model.Address</p>
+    <p><strong>Department Id:</strong> @Model.Dept_id</p>
+    <p><strong>Course Id:</strong> @Model.Crs_id</p>
+    <img src="~/images/@Model.Imag" width="200" />
+</div>
+
+<a asp-controller="Instructor" asp-action="Index">Back to List</a>
